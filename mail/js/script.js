@@ -6,7 +6,7 @@ let canAccess = false   // global variable to check if the user can access or no
 
 for (let i = 0; i < validMails.length; i++) {
     const currentMail = validMails[i];
-    if (userMail === currentMail) {
+    if (userMail.toLowerCase() === currentMail.toLowerCase()) {
         canAccess = true
     }
 }
